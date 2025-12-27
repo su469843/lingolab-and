@@ -40,7 +40,7 @@ export const getSentences = async (userId) => {
 // 获取排行榜
 export const getLeaderboard = async () => {
     try {
-        const response = await api.get('/leaderboard');
+        const response = await api.get('/stats/leaderboard');
         return response.data;
     } catch (error) {
         console.error('获取排行榜失败:', error);
